@@ -3,7 +3,7 @@ kind: Deployment
 metadata:
   name: my-springboot-deployment
 spec:
-  replicas: 3
+  replicas: 4
   selector:
     matchLabels:
       app: springboot-app
@@ -33,6 +33,6 @@ spec:
     port: 80
     protocol: TCP
     targetPort: 8085
-  type: LoadBalancer
+  type: ClusterIP
   selector:
     app: springboot-app
