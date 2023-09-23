@@ -14,8 +14,7 @@ spec:
     spec:
       containers:
       - name: my-springboot-app
-        image: prasannaballa/springboot-app:latest
-        imagePullPolicy: Always
+        image: image: k8snode.azurecr.io/prasannaballa/springboot-app:#{Build.BuildId}#
         ports:
         - containerPort: 8085
 # service type loadbalancer       
