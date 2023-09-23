@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: my-springboot-app
-        image: akspractice123.azurecr.io/prasannaballa/springboot-app:#{Build.BuildId}#
+        image: k8snode.azurecr.io/prasannaballa/springboot-app:#{Build.BuildId}#
         imagePullPolicy: Always
         ports:
         - containerPort: 8085
@@ -33,6 +33,6 @@ spec:
     port: 80
     protocol: TCP
     targetPort: 8085
-  type: ClusterIP
+  type: NodePort
   selector:
     app: springboot-app
