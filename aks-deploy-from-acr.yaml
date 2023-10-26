@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: my-springboot-app
-        image: sivaacr123.azurecr.io/prasannaballa/springboot-app123:latest
+        image: siva1245.azurecr.io/prasannaballa/springboot-app123:latest
         ports:
         - containerPort: 8085
 # service type loadbalancer       
